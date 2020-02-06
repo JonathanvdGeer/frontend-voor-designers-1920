@@ -1,24 +1,18 @@
-html{
-  box-sizing: border-box; /* https://css-tricks.com/box-sizing/ */
-  background:#eee;
-  background: url("../img/flagF4D.png") center no-repeat;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 body{
+/*
   max-width: 30em;
   margin: 1em auto;
   padding: 1em;
   background: #fff;
   border-radius: 1em;
   box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
+*/
 }
 
 .fill {
     background-image: url('http://source.unsplash.com/random/150x150');
     position: relative;
-    height: : 150px;
+    height: 150px;
     width: 150px;
     top: 5px;
     left: 5px;
@@ -33,4 +27,17 @@ body{
     border: 3px solid;
     border-color: salmon;
     background-color: white;
+}
+
+.hold {
+    border: solid #ccc 4px;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
 }
