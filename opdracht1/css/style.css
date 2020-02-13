@@ -1,28 +1,49 @@
-body{
-/*
-  max-width: 30em;
-  margin: 1em auto;
-  padding: 1em;
-  background: #fff;
-  border-radius: 1em;
-  box-shadow: 0.5em 0.5em 0.5em rgba(68,68,68,0.6);
-*/
+body {
+    background: white;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    width: 800px;
+    cursor: pointer;
+}
+
+th {
+    background: yellow;
+    font-family: sans-serif;
+    border: 3px solid grey;
+}
+
+td {
+    text-align: center;
+    height: 160px;
+    width: 160px;
+    font-family: monospace;
+    border: 2px solid grey;
+    background-color: beige;
 }
 
 .fill {
     background-image: url('http://source.unsplash.com/random/150x150');
     position: relative;
     height: 150px;
-    width: 150px;
+    width: 650px;
     top: 5px;
     left: 5px;
     cursor: pointer;
 }
 
 .empty {
-    display: inline-block;
+    display: block;
     height: 160px;
-    width: 160px;
+    width: 660px;
     margin: 10px;
     border: 3px solid;
     border-color: salmon;
@@ -40,4 +61,8 @@ body{
 
 .invisible {
     display: none;
+}
+
+.enter{
+    background: green;
 }

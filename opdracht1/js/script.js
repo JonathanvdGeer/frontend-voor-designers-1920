@@ -24,26 +24,35 @@ for (const empty of empties) {
 function dragStart() {
     this.className += ' hold';
     setTimeout(() => (this.className = 'invisible'), 0);
+    console.log("dragStart")
 }
 
 function dragEnd() {
     this.className = 'fill';
+    console.log("dragEnd")
 }
 
 function dragOver(e) {
     e.preventDefault();
+    console.log("dragOver",e)
+    document.querySelector(e.target).classList.add("enter")
 }
 
 function dragEnter(e) {
     e.preventDefault();
     this.className += 'hovered';
+    console.log("dragEnter",e.target)
+
 }
 
 function dragLeave() {
     this.className = 'empty';
+    console.log("dragLeave",this)
+    e.target.classList.remove("enter")
 }
 
 function dragDrop() {
     this.className = 'empty';
     this.append(fill);
+    console.log("dragDrop")
 }
