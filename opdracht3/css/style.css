@@ -13,6 +13,20 @@ body {
     background-color: #0C090A;
 }
 
+
+/* LOADING SECTION */
+.loading img {
+    width: 100%;
+    height: 90vh;
+}
+
+.loading h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 2em;
+}
+
+
 /* FILTER BUTTONS STYLE */
 .btn {
     border: none;
@@ -128,18 +142,24 @@ main h2 {
     transform: scale(1.10);
 }
 
+genres {
+    font-size: 3em;
+}
+
 img {
     width: 16em;
     height: 24em;
     margin: auto;
 }
 
-.loading img {
-    width: 100%;
-    height: 90vh;
-}
 
-body div h1 {
+/* FOOTER */
+footer {
+    font-weight: bold;
+    font-size: 0.8em;
     text-align: center;
-    font-weight: normal;
+    padding: 30px;
+    color: whitesmoke;
+    background-color: #282828;
+    margin-top: 100px;
 }

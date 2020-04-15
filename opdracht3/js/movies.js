@@ -3,8 +3,9 @@
 /*eslint 'no-console':0*/
 
 //--- QUERY DECLARATIES ---//
-var header = document.querySelector('header');
-var section = document.querySelector('section'); // Naar HTML
+
+//var header = document.querySelector('header');
+var section = document.querySelector('section'); // Naar HTML.
 
 
 //------------------------------------- FILE AANVRAGEN -------------------------------------- //
@@ -22,14 +23,13 @@ request.send(); // En bij send zeg je dat hij het verstuurd.
 //------------------------------------- AANMAKEN: GEGEVENS LADEN EN FUNCTIE -------------------------------------- //
 
 request.onload = function () { //Aangeven wat hij moet doen wanneer het geladen is.
-    //ophalenfilms(films, 0, 2); // De functie start, de var wordt meegegeven en de aantal films worden getoond (begin en eind).
-    showMovies(request.response);
+    showMovies(request.response); // De functie start, de var wordt meegegeven en de aantal films worden getoond (begin en eind).
 }
 
 
 //------------------------------------- HTML ELEMENTEN VULLEN MET GEGEVENS JSON FILE -------------------------------------- //
-// Titel --> Var --> DOM --> Element --> AppendChild name
-function showMovies(movies) {
+
+function showMovies(movies) { // Titel --> var --> DOM --> Element --> AppendChild name.
 
 
     for (i = 0; i < movies.length; i++) {
@@ -43,10 +43,8 @@ function showMovies(movies) {
 }
 
 
-
-
-
 //------------------------------------- FILTER BUTTONS -------------------------------------- //
+// Bron: https://www.w3schools.com/howto/howto_js_filter_elements.asp en geholpen door: Rowin Ruizendaal.
 filterSelection("all")
 
 function filterSelection(c) {
@@ -82,7 +80,7 @@ function w3RemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
+// Add active class to the current button (highlight it).
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
