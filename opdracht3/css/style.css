@@ -140,8 +140,14 @@ main h2 {
     margin-right: auto;
 }
 
-.card:hover {
-    transform: scale(1.20);
+.card img {
+/*    filter: sepia(100%) hue-rotate(38deg) brightness(.9);*/
+    transition: all .5 ease;
+}
+
+.card:hover img {
+    transform: scale(1.28);
+/*    filter: sepia(0) hue-rotate(0) brightness(1);*/
 }
 
 img {
