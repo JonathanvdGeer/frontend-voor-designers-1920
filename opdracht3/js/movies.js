@@ -22,7 +22,7 @@ request.send(); // En bij send zeg je dat hij het verstuurd.
 
 //------------------------------------- AANMAKEN: GEGEVENS LADEN EN FUNCTIE -------------------------------------- //
 
-request.onload = function () { //Aangeven wat hij moet doen wanneer het geladen is.
+request.onload = function() { //Aangeven wat hij moet doen wanneer het geladen is.
     showMovies(request.response); // De functie start, de var wordt meegegeven en de aantal films worden getoond (begin en eind).
 }
 
@@ -31,16 +31,38 @@ request.onload = function () { //Aangeven wat hij moet doen wanneer het geladen 
 
 function showMovies(movies) { // Titel --> var --> DOM --> Element --> AppendChild name.
 
-
     for (i = 0; i < movies.length; i++) {
         var div = document.createElement('div');
         var genres = movies[i].genres
         filterclass = 'filterDiv ' + genres + ' show';
         div.setAttribute('class', filterclass + ' card');
         document.getElementsByClassName('container')[0].appendChild(div);
-        document.getElementsByClassName('card')[i].innerHTML = '<img src=' + movies[i].cover + '>' + '<br><p class=titel>' + movies[i].title + '</p><br><p class=genre>' +  movies[i].genres + '</p><br> <br><p class=plot>' + movies[i].simple_plot + '</p>';
+        document.getElementsByClassName('card')[i].innerHTML = '<img class=cover src=' + movies[i].cover + '>' + '<br><p class=titel>' + movies[i].title + '</p><br><p class=genre>' + movies[i].genres + '</p><br> <br><p class=plot>' + movies[i].simple_plot + '</p>';
+        Makeiframe(movies[i].trailer, [i]);
     }
 }
+
+// Bron: https://stackoverflow.com/questions/8726455/creating-an-iframe-using-javascript
+function Makeiframe(trailer, getal) {
+    
+    document.getElementsByClassName('cover')[getal].addEventListener("click", function(){
+    var ifrm = document.createElement("iframe");
+    var button = document.createElement("button");
+    ifrm.setAttribute("class", 'trailer');
+    ifrm.setAttribute("src", trailer);
+    ifrm.style.width = "640px";
+    ifrm.style.height = "480px";
+    document.getElementsByClassName('movies')[0].appendChild(ifrm);
+    document.getElementsByClassName('close')[0].style.display = "block";
+  });
+}
+
+function removeIFrame() {
+    document.getElementsByClassName("trailer")[0].remove();
+    document.getElementsByClassName('close')[0].style.display = "none";
+}
+
+document.getElementsByClassName('close')[0].addEventListener('click', removeIFrame)
 
 
 //------------------------------------- FILTER BUTTONS -------------------------------------- //
@@ -84,13 +106,12 @@ function w3RemoveClass(element, name) {
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
+    btns[i].addEventListener("click", function() {
 
         for (var j = 0; j < btns.length; j++) {
             btns[j].classList.remove("active");
         }
         this.classList.add("active");
-
 
     });
 }

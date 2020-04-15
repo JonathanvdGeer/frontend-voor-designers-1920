@@ -51,6 +51,7 @@ body {
 
 .btn:hover {
     background-color: #1b9bff;
+    transition: 0.5s;
     color: white;
 }
 
@@ -88,6 +89,10 @@ header img {
     width: 5em;
     height: 5em;
     padding: 1em;
+}
+
+header img:hover {
+    transform: scale(1.20);
 }
 
 header h1 {
@@ -141,13 +146,13 @@ main h2 {
 }
 
 .card img {
-/*    filter: sepia(100%) hue-rotate(38deg) brightness(.9);*/
+    /*    filter: sepia(100%) hue-rotate(38deg) brightness(.9);*/
     transition: all .5 ease;
 }
 
 .card:hover img {
     transform: scale(1.28);
-/*    filter: sepia(0) hue-rotate(0) brightness(1);*/
+    /*    filter: sepia(0) hue-rotate(0) brightness(1);*/
 }
 
 img {
@@ -183,6 +188,46 @@ img {
     font-size: 0.9em;
     font-family: 'Baloo Paaji 2', cursive;
     max-width: 400px;
+}
+
+/* TRAILER SECTION */
+.trailer {
+    justify-content: center;
+    display: block;
+    border: none;
+/*    width: 100%;*/
+/*    height: auto;*/
+}
+
+.movies {
+    position: absolute;
+    width: 38%;
+    margin: 0 auto;
+    top: 190px;
+    left: 0;
+    right: 0;
+}
+
+.close {
+    display: block;
+    display: none;
+    background-color: #FF3333;
+    position: absolute;
+    height: 40px;
+    top: 480px;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: #1b9bff;
+    transition: 0.5s;
+    color: white;
 }
 
 
