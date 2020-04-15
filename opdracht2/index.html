@@ -1,8 +1,613 @@
-<html>
-  <head>
-    <title>Frontend voor Designer - Opdracht 2</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio: Jonathan van de Geer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- NAVBAR -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">JØNEUZ</label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <!--                <li><a href="#projects">Projects</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- BANNER IMAGE -->
+        <div class="bg-image"></div>
+
+        <!-- SHORT INFO TEXT -->
+        <section class="containerInfo">
+            <article class="item">
+                <h3> Wie ben ik? </h3> Ik ben 22 jaar oud en studeer momenteel "Communication &#38; Mediadesign" bij de
+                Hogeschool van Amsterdam.
+                <br>
+                <br>
+
+                <h3>Diploma's: </h3> - "Economie" (VMBO-T)" Behaald.
+                <br> - "Dance, Music &#38; Events (MBO 4)" Behaald.
+                <br> - "Communication &#38; Mediadesign" Propedeuse.
+            </article>
+
+            <article class="item">
+                <h3> Waarom Mediadesign? </h3> Het is voor mij een leuke uitdaging om echt creatief te zijn als
+                designer/ontwerper.
+                <br>
+                <br> Daarnaast wil ik ook mijn vaardigheden vanuit mijn vorige opleiding toepassen en verbeteren, zodat
+                ik mijn leer-skills goed gecombineerd kan worden met stages én werk.
+            </article>
+        </section>
+
+        <!-- MIJN SKILLS -->
+        <section class="page-section" id="services">
+            <div class="containerMijnSkills">
+
+                <div class="rowSkills">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">My Ability</h2>
+                        <h3 class="section-subheading text-muted">Development over the years.</h3>
+                    </div>
+                </div>
+
+                <div class="rowSkills text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img class="logoSkills" src="img/Skills/creativity.svg" alt="Visual Logo">
+                        </span>
+                        <h4 class="service-heading">Events &#38; Designing</h4>
+                        <p class="text-muted">Tijdens verschillende soorten evenementen, websites en apps kom ik altijd
+                            gave designs tegen wat mij inspireert.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img class="logoSkills" src="img/Skills/laptop.svg" alt="Digitiale Tools Logo">
+                        </span>
+                        <h4 class="service-heading">Digital Tools</h4>
+                        <p class="text-muted"> Verschillende tools waar ik goed overweg kan kun je hieronder vinden.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <img class="logoSkills" src="img/Skills/UIUX.svg" alt="UX en UI Logo">
+                        </span>
+                        <h4 class="service-heading">UX en UI design</h4>
+                        <p class="text-muted">Ook heb ik veel projecten, maar ook cases ontworpen en getest door middel
+                            van: User Experience en User Interface theorie methodes.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- VAKKEN SKILL BARS -->
+                <div class="containerSkill">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h2>Courses</h2>
+                            <div class="progress blue">
+                                <h3 class="progress-title">Visual</h3>
+                                <div class="progress-bar" style="width:85%;">
+                                    <div class="progress-value">85%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress purple">
+                                <h3 class="progress-title">User Exp.</h3>
+                                <div class="progress-bar" style="width:80%;">
+                                    <div class="progress-value">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress yellow">
+                                <h3 class="progress-title">User Int.</h3>
+                                <div class="progress-bar" style="width:75%;">
+                                    <div class="progress-value">75%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress green">
+                                <h3 class="progress-title">Coderen</h3>
+                                <div class="progress-bar" style="width:70%;">
+                                    <div class="progress-value">70%</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOFTWARE SKILL BARS -->
+                <div class="containerSoftwareSkill">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h2>Software skills</h2>
+                            <div class="progress orange">
+                                <h3 class="progress-title">Illustrator</h3>
+                                <div class="progress-bar" style="width:85%;">
+                                    <div class="progress-value">85%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress red">
+                                <h3 class="progress-title">InDesign</h3>
+                                <div class="progress-bar" style="width:80%;">
+                                    <div class="progress-value">80%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress pink">
+                                <h3 class="progress-title">Adobe XD</h3>
+                                <div class="progress-bar" style="width:70%;">
+                                    <div class="progress-value">70%</div>
+                                </div>
+                            </div>
+
+                            <div class="progress lightblue">
+                                <h3 class="progress-title">Photoshop</h3>
+                                <div class="progress-bar" style="width:70%;">
+                                    <div class="progress-value">70%</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAGS -->
+        <div class="project-tags">
+            <ul>
+                <li><a>Visual Designer</a></li>
+                <li>User Experience</li>
+                <li>User Interface</li>
+                <li>Events</li>
+            </ul>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('vis')"> Visual</button>
+            <button class="btn" onclick="filterSelection('ux')"> UX</button>
+            <button class="btn" onclick="filterSelection('ui')"> UI</button>
+            <button class="btn" onclick="filterSelection('prjcts')"> Projects</button>
+        </div>
+
+        <!-- MY WORK GALLERY CONTAINER -->
+        <div class="containerGallery">
+
+            <!-- Melkweg GALLERY -->
+            <div class="filterDiv vis">
+                <img src="img/Banners/Visual/Melkwegposter.jpg" alt="Melkweg Poster Banner" id='Melkweg-poster' /></div>
+
+            <!-- MELKWEG MODAL -->
+            <div id="Melkweg" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Melkweg Poster</h1>
+                        <h2>Visual</h2>
+                        <h3>Huisstijl &#38; InDesign</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/Visual/Melkwegposter.jpg" alt="Melkweg Poster" style="width:80%">
+
+                        <div class="modalTekst">
+                            <p> Ik had voor Melkweg een evenementen agenda gemaak, hierbij moest ik vanuit hun huisstijl en informatie die ik gekregen heb verwerken in een poster. Het was dus belangrijk om goed met de tekenstijlen en grids te werken, daarom heb ik voor InDesign gekozen.</p>
+                        </div>
+
+                        <div class="modalHeader">
+                            <h1 class="M-Agenda">Melkweg Agenda</h1>
+                            <h2>Visual</h2>
+                            <h3>Skecthen &#38; XD</h3>
+                        </div>
+                        <img class="modalImg" src="img/Banners/Visual/Agendaschetsen.png" alt="Melkweg Evenementen Agenda Schetsen" style="width:80%">
+                        <img class="modalImg" src="img/Banners/Visual/Melkwegagenda.png" alt="Melkweg Evenementen Agenda" style="width:70%">
+
+                        <div class="modalTekst">
+                            <p> Daarnaast had ik ook de opdracht gekregen om een evenement agenda te maken voor mobiele telefoons. Door eerst inspiratie uit Pinterest te halen en daarna dingen lopen schetsen kwam ik op dit idee uit. <br> <br> Voor mij waren deze opdrachten een hele leuke uitdaging, omdat ik dit later ook wil gaan doen voor evenementen en artiesten.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- HvA Fast Coffee App GALLERY -->
+            <div class="filterDiv ux">
+                <img src="img/Banners/UX/UCD/HvACoffeePoster.png" alt="HvA Fast Coffee App Poster" id='Hvacoffee-poster' /></div>
+
+            <!-- HvA Fast Coffee App Guide MODAL -->
+            <div id="Hvacoffee" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>HvA Fast Coffee App</h1>
+                        <h2>User Experience</h2>
+                        <h3>Research, Sketchen &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/UX/UCD/UserTrip.png" alt="HvA Fast Coffee App Poster" style="width:40%">
+                        <img class="modalImg" src="img/Banners/UX/UCD/Schetsen.png" alt="HvA Fast Coffee App Poster" style="width:70%">
+                        <img class="modalImg" src="img/Banners/UX/UCD/HvACoffeePoster.png" alt="HvA Fast Coffee App Poster" style="width:70%">
+
+                        <div class="modalTekst">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates vel ad maiores earum nesciunt! Voluptatum eveniet illo temporibus, eius minus dolores fugiat dolorum aliquid similique? Nobis, iste aspernatur dolorum illo.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Website Travel Guide GALLERY -->
+            <div class="filterDiv ui">
+                <img src="img/Banners/UI/Frontend/TravelGuideWebsiteCover.png" alt="Travel Guide Website" id='Travelguide-poster' />
+            </div>
+
+            <!-- Website Travel Guide MODAL -->
+            <div id="Travelguide" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Website Travel Guide</h1>
+                        <h2>HTML, CSS &#38; JS</h2>
+                        <h3>Brackets</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <a href="https://jonathanvdgeer.github.io/TravelGuideProject/"><img class="modalImg" src="img/Banners/UI/Frontend/TravelGuideWebsiteCover.png" alt="Website Travel Guide" style="width:80%"></a>
+
+                        <div class="modalTekst">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates vel ad maiores earum nesciunt! Voluptatum eveniet illo temporibus, eius minus dolores fugiat dolorum aliquid similique? Nobis, iste aspernatur dolorum illo.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Aqua-Buddy GALLERY -->
+            <div class="filterDiv prjcts"><img src="img/Banners/Projects/ProjectBeyond/ProjectBeyondCover.png" alt="Aqua-Buddy Poster Cover" id='Aquabuddy-poster' /></div>
+
+            <!-- Aqua-Buddy MODAL -->
+            <div id="Aqua-Buddy" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Aqua-Buddy</h1>
+                        <h2>Team Project</h2>
+                        <h3>Research, Sketchen, InDesign &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ae5241c4b-eb7f-428f-b9bd-7943db6c0805" target="_blank"><img class="modalImg" src="img/Banners/Projects/ProjectBeyond/DesignRationaleCover.png" alt="Design Rationale" style="width:32.4%"></a>
+                        <a href="https://documentcloud.adobe.com/link/review?uri=urn%3Aaaid%3Ascds%3AUS%3A558ee1fd-5328-4002-9cf5-30bca97cc9ac" target="_blank"><img class="modalImg" src="img/Banners/Projects/ProjectBeyond/ProductBiografieCover.png" alt="Product Biografie" style="width:32.4%"></a>
+                        <img class="modalImg" src="img/Banners/Projects/ProjectBeyond/Concept.png" alt="Het Concept" style="width:32.4%">
+
+                        <div class="modalTekst">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae laudantium, consequuntur libero, quisquam eligendi, itaque accusantium pariatur enim autem maiores cumque quidem deleniti repudiandae sit iusto illo dolore officiis harum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animal Planet GALLERY -->
+            <div class="filterDiv vis"><img src="img/Banners/Visual/Content/AnimalPlanet.png" alt="Animal Planet Cover" id='Animalplanet-poster' /></div>
+
+            <!-- Animal Planet MODAL -->
+            <div id="Animalplanet" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Animal Planet</h1>
+                        <h2>Visual &#38; Content</h2>
+                        <h3>Brainstormen &#38; Illustrator</h3>
+                    </div>
+
+                    <!-- Animal Planet GALLERY -->
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/Visual/Content/AnimalPlanetFlowchart.png" alt="AnimalPlanet Flowchart" style="max-width:90%">
+                        <img class="modalImg" src="img/Banners/Visual/Content/OverOns.png" alt="AnimalPlanet Flowchart" style="max-width:90%">
+                        <img class="modalImg" src="img/Banners/Visual/Content/EekhoornProfiel.png" alt="AnimalPlanet Flowchart" style="max-width:48%">
+                        <img class="modalImg" src="img/Banners/Visual/Content/VarkenProfiel.png" alt="AnimalPlanet Flowchart" style="max-width:48%">
+                        <img class="modalImg" src="img/Banners/Visual/Content/VosProfiel.png" alt="AnimalPlanet Flowchart" style="max-width:48%">
+                        <img class="modalImg" src="img/Banners/Visual/Content/SuccesVerhalen.png" alt="AnimalPlanet Flowchart" style="max-width:48%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, distinctio, cumque! Quaerat, perspiciatis consequatur error earum vel minima, quo amet doloribus aperiam dolorum sit inventore, quas maiores animi excepturi odio.
+                        </p>
+                    </div>
+                </div>
+            </div>            
+
+            <!-- NPD GALLERY -->
+            <div class="filterDiv ux"><img src="img/Banners/UX/NPD/OntwerphandleidingBanner.png" alt="Designer Guide NPD" id='NPD-poster' /></div>
+
+            <!-- NPD MODAL -->
+            <div id="NPD" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Ontwerphandleiding</h1>
+                        <h2>User Experience</h2>
+                        <h3>Brainstormen, Sketchen &#38; InDesign</h3>
+                    </div>
+
+                    <!-- NPD GALLERY -->
+                    <div class="modalBody">
+                        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A3265edac-6e4e-46cf-8ffc-e04093590584" target="_blank"><img class="modalImg" src="img/Banners/UX/NPD/OntwerphandleidingBanner.png" alt="Ontwerphandleiding NPD" style="max-width:60%"></a>
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, distinctio, cumque! Quaerat, perspiciatis consequatur error earum vel minima, quo amet doloribus aperiam dolorum sit inventore, quas maiores animi excepturi odio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fit2Go GALLERY -->
+            <!--
+            <div class="filterDiv ui"><img src="img/Banners/UI/Ubicomp/FitGo.jpg" alt="Fit2Go IoT Document" />
+            </div>
+-->
+
+            <!-- Dream Mobile GALLERY -->
+            <div class="filterDiv prjcts"><img src="img/Banners/Projects/Slaapproject/Slaapproject.png" alt="Dream Mobile Project" id='Dream-poster' /></div>
+            <!-- Dream Mobile MODAL -->
+            <div id="Dream" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Dream Mobile</h1>
+                        <h2>Team Project</h2>
+                        <h3>Research, Workshops &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/Projects/Slaapproject/Slaapproject.png" alt="Dream Mobile" style="width:60%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error maiores, sequi nam rem iure nihil non vitae impedit porro atque commodi a illo provident, dolore sunt, dolorum repudiandae necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vormgeving Verhalen GALLERY -->
+            <div class="filterDiv vis"><img src="img/Banners/Visual/Vormgeving/VerbeterdeMoe.png" alt="Vormgeving Moe Verhaal" id='Verhalen-poster' /></div>
+
+            <!-- Vormgeving Verhalen MODAL -->
+            <div id="Verhalen" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Verhalen</h1>
+                        <h2>Visual</h2>
+                        <h3>Research &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/Visual/Vormgeving/VerbeterdeMoe.png" alt="Pizzadoos" style="width:45%">
+                        <img class="modalImg" src="img/Banners/Visual/Vormgeving/VerbeterdeVerrast.png" alt="One Page Ontwerp Poster" style="width:45%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error maiores, sequi nam rem iure nihil non vitae impedit porro atque commodi a illo provident, dolore sunt, dolorum repudiandae necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Design Patterns GALLERY -->
+            <!--
+            <div class="filterDiv ui"><img src="img/Banners/UI/DesignPatterns/DesignPatternsCover.jpg" alt="Travel Guide Verslag" />
+            </div>
+-->
+
+            <!-- Pizza GALLERY -->
+            <div class="filterDiv vis"><img src="img/Banners/Visual/Vormgeving/Pizzadoos.png" alt="Vormgeving Single Page Pizza" id='Vormgeving-poster' /></div>
+
+            <!-- Pizza MODAL -->
+            <div id="Singlepage" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>One Page Pizza</h1>
+                        <h2>Visual</h2>
+                        <h3>Research &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A804e4f5b-9163-474b-893a-009233ecfce3" target="_blank"><img class="modalImg" src="img/Banners/Visual/Vormgeving/PizzadoosLos.png" alt="Pizzadoos" style="width:50%"></a>
+                        <img class="modalImg" src="img/Banners/Visual/Vormgeving/SinglePage.png" alt="One Page Ontwerp Poster" style="width:50%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error maiores, sequi nam rem iure nihil non vitae impedit porro atque commodi a illo provident, dolore sunt, dolorum repudiandae necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ninja Warrior GALLERY -->
+            <div class="filterDiv ui"><img src="img/Banners/UI/IA/NinjaWarriorBanner.png" alt="Ninja Warrior Designer Document" id='Ninjawarrior-poster' /></div>
+
+            <!-- Ninja Warrior MODAL -->
+            <div id="Ninjawarrior" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Ninja Warrior</h1>
+                        <h2>UX &#38; UI</h2>
+                        <h3>Illustrator &#38; XD</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A0ab18348-9e7e-48f5-a20b-161008e4e61f" target="_blank"><img class="modalImg" src="img/Banners/UI/IA/Overzichtsdiagram.png" alt="Overzichtsdiagram" style="width:70%"></a>
+                        <img class="modalImg" src="img/Banners/UI/IA/Zerostate.png" alt="Zerostate Schermen" style="width:70%">
+                        <img class="modalImg" src="img/Banners/UI/IA/Procesverslag.png" alt="Ninja Warrior Schermen" style="width:70%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error maiores, sequi nam rem iure nihil non vitae impedit porro atque commodi a illo provident, dolore sunt, dolorum repudiandae necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hvana GALLERY -->
+            <div class="filterDiv vis"><img src="img/Banners/Visual/Vormgeving/HVANAGrid.png" alt="HVANA Grid Work" id='Hvana-poster' /></div>
+
+            <!-- Hvana MODAL -->
+            <div id="Hvana" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>HVANA Grid/Responsive</h1>
+                        <h2>Visual</h2>
+                        <h3>Huisstijl &#38; XD</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A17febdea-d95b-49a0-b759-a185d44d62ea" target="_blank"><img class="modalImg" src="img/Banners/Visual/Vormgeving/HVANAGrid.png" alt="Hvana Grid" style="width:50%"></a>
+                        <img class="modalImg" src="img/Banners/Visual/Vormgeving/Huisstijl.png" alt="Hvana Grid" style="width:50%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus tempora incidunt amet reiciendis consequatur mollitia optio accusamus fugiat dolores officia pariatur error ducimus debitis aliquid, perferendis nam voluptates quod necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spotywrist GALLERY -->
+            <div class="filterDiv ui"><img src="img/Banners/UI/Spotywrist/SpotywristPoster.png" alt="Spotywrist Wristband Concept Poster" id='Spotywrist-poster' /></div>
+
+            <!-- Spotywrist MODAL -->
+            <div id="Spotywrist" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Spotywrist</h1>
+                        <h2>UX &#38; UI</h2>
+                        <h3>Research, XD &#38; Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/UI/Spotywrist/Idee.png" alt="Spotywrist Fysiek en Interactie Concept" style="width:60%">
+                        <a href="https://xd.adobe.com/view/4ce98d18-d403-4f5e-7bdc-f3362d4dee4d-3ad8/?fullscreen" target="_blank"><img class="modalImg" src="img/Banners/UI/Spotywrist/Prototype.png" alt="Spotywrist Prototype" style="width:60%"></a>
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur error maiores, sequi nam rem iure nihil non vitae impedit porro atque commodi a illo provident, dolore sunt, dolorum repudiandae necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small Visual Portfolio GALLERY -->
+            <div class="filterDiv vis"><img src="img/Banners/Visual/VisualPorto.png" alt="Small Visual Portfolio" id='Visualport-poster' /></div>
+
+            <!-- Small Visual Portfolio MODAL -->
+            <div id="Visualport" class="modal">
+
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span class="close">&times;</span>
+                        <h1>Portfolio Visual Blok</h1>
+                        <h2>Visual</h2>
+                        <h3>Illustrator</h3>
+                    </div>
+
+                    <div class="modalBody">
+                        <img class="modalImg" src="img/Banners/Visual/VisualPorto.png" alt="Portfolio Visual Blok" style="width:70%">
+                    </div>
+
+                    <div class="modalTekst">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus tempora incidunt amet reiciendis consequatur mollitia optio accusamus fugiat dolores officia pariatur error ducimus debitis aliquid, perferendis nam voluptates quod necessitatibus!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="filterDiv ui"><img src="img/Banners/UI/ViD/Stijlpagina.jpg" alt="NBD Biblion Book Case" />
+            </div>
+-->
+        </div>
+
+        <!-- CONTACT ME HREF -->
+        <div class="backgroundCard">
+            <div class="contactCard">
+                <img src="img/Ik/Ik.jpg" alt="Jonathan van de Geer" style="width:100%">
+
+                <h2>Jonathan van de Geer</h2>
+
+                <p class="title">Visual, UX &#38; UI Designer</p>
+
+                <p>CMD Student</p>
+
+                <button onclick="window.location.href = 'contact.html';">Contact</button>
+            </div>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <div style="clear:both;"></div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body></html>
