@@ -38,7 +38,7 @@ function showMovies(movies) { // Titel --> var --> DOM --> Element --> AppendChi
         filterclass = 'filterDiv ' + genres + ' show';
         div.setAttribute('class', filterclass + ' card');
         document.getElementsByClassName('container')[0].appendChild(div);
-        document.getElementsByClassName('card')[i].innerHTML = '<img src=' + movies[i].cover + '>' + '<br>' + movies[i].title + '<br>' +  movies[i].genres + '<br> <br>' + movies[i].simple_plot;
+        document.getElementsByClassName('card')[i].innerHTML = '<img src=' + movies[i].cover + '>' + '<br><p class=titel>' + movies[i].title + '</p><br><p class=genre>' +  movies[i].genres + '</p><br> <br><p class=plot>' + movies[i].simple_plot + '</p>';
     }
 }
 

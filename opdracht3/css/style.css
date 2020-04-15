@@ -153,6 +153,30 @@ img {
 }
 
 
+/* STYLING CARDS */
+.titel {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.genre {
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: 'Baloo Paaji 2', cursive;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.plot {
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+
 /* FOOTER */
 footer {
     justify-content: center;
