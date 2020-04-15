@@ -1,0 +1,1 @@
+setTimeout(function(){window.location='movies.html';}, 3000) //wait three seconds before continuing.
