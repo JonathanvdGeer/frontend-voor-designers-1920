@@ -155,11 +155,12 @@ img {
 
 /* FOOTER */
 footer {
+    justify-content: center;
+    text-align: center;
+    background-color: #282828;
     font-weight: bold;
     font-size: 0.8em;
-    text-align: center;
     padding: 30px;
     color: white;
-    background-color: #282828;
     margin-top: 100px;
 }
