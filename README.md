@@ -20,7 +20,7 @@ Het vak bestaat uit 3 opdrachten:
 ---
 # WEBSITE "WatchMe Movies" EINDOPDRACHT (OPDRACHT 3)
 
-Een basic film overzicht waar je verschillende films kan gaan kijken of als je op zoek bent naar korte informatie, zoals; genres en simple plot twist. 
+Een basic film overzicht waar je verschillende films kan gaan kijken of als je op zoek bent naar korte informatie, zoals; trailers, genres en simple plot twist. 
 
 
 # FEEDBACK EINDOPDRACHT
