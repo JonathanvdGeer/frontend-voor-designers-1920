@@ -1,8 +1,8 @@
-# Frontend voor Designers 1920
+# Frontend voor Designers 1920 - Jonathan van de Geer
 
 ![alt text](./img/F4Dsplash.png "Frontend voor Design Splash")
 
-In het vak Frontend voor Designers leer je hoe je met HTML, CSS en Javascript prototypes kunt maken om je ontwerpideeën te testen in een browser. We gaan animeren, responsive layouts uitproberen en interactie coderen ...
+In het vak Frontend voor Designers heb ik geleerd hoe je met HTML, CSS en Javascript prototypes kunt maken om je ontwerpideeën te testen in een browser, door middel van; animeren, responsive layouts uitproberen en interactie coderen ...
 
 
 Het vak bestaat uit 3 opdrachten:
@@ -29,3 +29,9 @@ Vincent: Ik vind het leuk gedaan! Die loader in het begin, goud :thumbsup: en ee
 
 
 Voor mijn feedback had ik nog geen trailers toegevoegd als je op een cover klikt, dat had ik dus aangemaakt. Daarnaast had ik nog weinig gestyled waardoor ik de layout een beetje ging aanpassen. Verder heb ik nog hover animaties toegevoegd/verbeterd bij de buttons en IMG. Tot slot heb ik ook nog gekeken hoe ik mijn filter een leuke animatie kan geven dat het beweegd ofzo, maar daar had ik geen leuke gevonden of was moeilijk te volgen.
+
+
+Hierbij heb ik nog extra feedback gevraagd aan Vincent om te kijken wat hij er nu vond en dat was positief.
+
+
+Vincent: Lekker hoor!  nu wil ik de godfather gaan kijken :eyes:
