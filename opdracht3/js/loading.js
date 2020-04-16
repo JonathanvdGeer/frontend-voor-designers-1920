@@ -1,1 +1,1 @@
-setTimeout(function(){window.location='movies.html';}, 3000) //wait three seconds before continuing.
+setTimeout(function(){window.location='movies.html';}, 3000) // Grab a drink and snacks while you wait ... (Loading functie)

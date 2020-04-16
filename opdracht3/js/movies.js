@@ -28,41 +28,44 @@ request.onload = function() { //Aangeven wat hij moet doen wanneer het geladen i
 
 
 //------------------------------------- HTML ELEMENTEN VULLEN MET GEGEVENS JSON FILE -------------------------------------- //
+// Titel --> var --> DOM --> Element --> AppendChild name.
 
-function showMovies(movies) { // Titel --> var --> DOM --> Element --> AppendChild name.
+//Bron: https://www.w3schools.com/js/js_loop_for.asp
+function showMovies(movies) { // Functie: Show Movies en info.
 
-    for (i = 0; i < movies.length; i++) {
-        var div = document.createElement('div');
-        var genres = movies[i].genres
-        filterclass = 'filterDiv ' + genres + ' show';
-        div.setAttribute('class', filterclass + ' card');
-        document.getElementsByClassName('container')[0].appendChild(div);
-        document.getElementsByClassName('card')[i].innerHTML = '<img class=cover src=' + movies[i].cover + '>' + '<br><p class=titel>' + movies[i].title + '</p><br><p class=genre>' + movies[i].genres + '</p><br> <br><p class=plot>' + movies[i].simple_plot + '</p>';
-        Makeiframe(movies[i].trailer, [i]);
+    for (i = 0; i < movies.length; i++) { // For loop: Dezelfde code steeds opnieuw uitvoeren met telkens een andere waarde.
+
+        var div = document.createElement('div'); // Vraag de Content & Container aan.
+        var genres = movies[i].genres // Vraag de genres aan.
+        filterclass = 'filterDiv ' + genres + ' show'; 
+        div.setAttribute('class', filterclass + ' card'); // Stelt de waarde in van een attribuut op het opgegeven element.
+        document.getElementsByClassName('container')[0].appendChild(div); // Begin bij Evil Dead.
+        document.getElementsByClassName('card')[i].innerHTML = '<img class=cover src=' + movies[i].cover + '>' + '<br><p class=titel>' + movies[i].title + '</p><br><p class=genre>' + movies[i].genres + '</p><br> <br><p class=plot>' + movies[i].simple_plot + '</p>'; // Roepen de covers, titels en genres op onder elkaar.
+        Makeiframe(movies[i].trailer, [i]); // Maak een iFrame aan voor Trailers.
     }
 }
 
 // Bron: https://stackoverflow.com/questions/8726455/creating-an-iframe-using-javascript
-function Makeiframe(trailer, getal) {
+function Makeiframe(trailer, getal) { // Functie: Open trailer functie.
     
-    document.getElementsByClassName('cover')[getal].addEventListener("click", function(){
-    var ifrm = document.createElement("iframe");
-    var button = document.createElement("button");
-    ifrm.setAttribute("class", 'trailer');
+    document.getElementsByClassName('cover')[getal].addEventListener("click", function(){ // Functie: Als ik op een cover klik; open de iframe.
+    var ifrm = document.createElement("iframe"); // Vraag de trailer aan.
+    var button = document.createElement("button"); // Close button functie.
+    ifrm.setAttribute("class", 'trailer'); // Per class (card) een trailer (Stelt de waarde in van een attribuut op het opgegeven element).
     ifrm.setAttribute("src", trailer);
-    ifrm.style.width = "640px";
-    ifrm.style.height = "480px";
-    document.getElementsByClassName('movies')[0].appendChild(ifrm);
+    ifrm.style.width = "640px"; // Breedte trailer.
+    ifrm.style.height = "480px"; // Hoogte trailer.
+    document.getElementsByClassName('movies')[0].appendChild(ifrm); // 
     document.getElementsByClassName('close')[0].style.display = "block";
   });
 }
 
-function removeIFrame() {
-    document.getElementsByClassName("trailer")[0].remove();
-    document.getElementsByClassName('close')[0].style.display = "none";
+function removeIFrame() { // Functie: Sluit trailer functie.
+    document.getElementsByClassName("trailer")[0].remove(); // Sluit trailer.
+    document.getElementsByClassName('close')[0].style.display = "none"; // Button om te sluiten.
 }
 
-document.getElementsByClassName('close')[0].addEventListener('click', removeIFrame)
+document.getElementsByClassName('close')[0].addEventListener('click', removeIFrame) // Klik om het te sluiten.
 
 
 //------------------------------------- FILTER BUTTONS -------------------------------------- //
@@ -112,6 +115,5 @@ for (var i = 0; i < btns.length; i++) {
             btns[j].classList.remove("active");
         }
         this.classList.add("active");
-
     });
 }
