@@ -18,11 +18,12 @@ Het vak bestaat uit 3 opdrachten:
 
 
 ---
-WEBSITE "WatchMe Movies" EINDOPDRACHT (OPDRACHT 3)
+# WEBSITE "WatchMe Movies" EINDOPDRACHT (OPDRACHT 3)
 
 Een basic film overzicht waar je verschillende films kan gaan kijken of als je op zoek bent naar korte informatie, zoals; genres, datum en simple plot twist. 
 
-FEEDBACK EINDOPDRACHT
+
+# FEEDBACK EINDOPDRACHT
 
 Vincent: Ik vind het leuk gedaan! Die loader in het begin, goud :thumbsup: en een lekkere filter trouwens.  Misschien als je wilt kan je kijken naar wat er zou gebeuren met een klik op het filmpje? Misschien een trailer laten zien? of ehh je zou misschien nog kunnen kijken hoe je het filteren leuker kan maken, een animatie? :man_shrugging:
 
