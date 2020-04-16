@@ -66,7 +66,7 @@ document.getElementsByClassName('close')[0].addEventListener('click', removeIFra
 
 
 //------------------------------------- FILTER BUTTONS -------------------------------------- //
-// Bron: https://www.w3schools.com/howto/howto_js_filter_elements.asp en geholpen door: Rowin Ruizendaal.
+// Bron: https://www.w3schools.com/howto/howto_js_filter_elements.asp en geholpen door: Koop Reynders & Rowin Ruizendaal.
 filterSelection("all")
 
 function filterSelection(c) {

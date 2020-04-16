@@ -53,11 +53,35 @@ body {
     background-color: #1b9bff;
     transition: 0.5s;
     color: white;
+    animation: shake 0.8s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(1px, 1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, -1px) rotate(-1deg);
+    }
+
+    75% {
+        transform: translate(2px, -1px) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-1px, 1px) rotate(-1deg);
+    }
 }
 
 .btn.active {
     background-color: #666;
     color: white;
+    animation: none;
 }
 
 .filterDiv {
@@ -151,7 +175,8 @@ main h2 {
 }
 
 .card:hover img {
-    transform: scale(1.28);
+/*    transform: scale(1.28);*/
+    animation: shake 0.9s infinite;
     /*    filter: sepia(0) hue-rotate(0) brightness(1);*/
 }
 
@@ -195,8 +220,8 @@ img {
     justify-content: center;
     display: block;
     border: none;
-/*    width: 100%;*/
-/*    height: auto;*/
+    /*    width: 100%;*/
+    /*    height: auto;*/
 }
 
 .movies {
