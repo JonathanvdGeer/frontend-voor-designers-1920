@@ -33,6 +33,7 @@ request.onload = function() { //Aangeven wat hij moet doen wanneer het geladen i
 //Bron: https://www.w3schools.com/js/js_loop_for.asp
 function showMovies(movies) { // Functie: Show Movies en info.
 
+// Alle code staat dus in een for loop, de JSON is geladen en telt het aantal records in de JSON. Op basis daarvan maakt hij voor elk record een div aan met bepaalde waardes.
     for (i = 0; i < movies.length; i++) { // For loop: Dezelfde code steeds opnieuw uitvoeren met telkens een andere waarde.
 
         var div = document.createElement('div'); // Vraag de Content & Container aan.
@@ -45,11 +46,16 @@ function showMovies(movies) { // Functie: Show Movies en info.
     }
 }
 
+// Vervolgens wordt de data van de cards gevuld met de rest van de JSON records zoals plot, dan wordt er voor elk record een iframe aangemaakt waarin de trailer url staat, deze wordt opgeroepen vanuit de functie Makeiframe met 2 parameters, dit om de data vanuit functie a over te zetten naar functie b.
+
+// In Makeiframe wordt er een frame gemaakt met bepaalde css waardens, deze functie is dus gekoppeld aan de cover fotos vanuit de front-end, dit is met een click event gedaan, dus zodra er geklikt word op een cover word de functie pas uitgevoerd.
+
+
 // Bron: https://stackoverflow.com/questions/8726455/creating-an-iframe-using-javascript
-function Makeiframe(trailer, getal) { // Functie: Open trailer functie.
+function Makeiframe(trailer, getal) { // Functie: Maak trailer iframe.
     
     document.getElementsByClassName('cover')[getal].addEventListener("click", function(){ // Functie: Als ik op een cover klik; open de iframe.
-    var ifrm = document.createElement("iframe"); // Vraag de trailer aan.
+    var ifrm = document.createElement("iframe"); // Vraagt de trailer aan.
     var button = document.createElement("button"); // Close button functie.
     ifrm.setAttribute("class", 'trailer'); // Per class (card) een trailer (Stelt de waarde in van een attribuut op het opgegeven element).
     ifrm.setAttribute("src", trailer);
@@ -60,9 +66,12 @@ function Makeiframe(trailer, getal) { // Functie: Open trailer functie.
   });
 }
 
+// Verder geef je de close button een display van block aangezien die standaard op none staat.
+
+// removeIFrame spreekt voor zich, op basis van een klik event op de button close wordt de functie remove uitgevoerd, deze zorgt er voor dat de trailer dus weg gaat en dat de button weer een display van none krijgt.
 function removeIFrame() { // Functie: Sluit trailer functie.
-    document.getElementsByClassName("trailer")[0].remove(); // Sluit trailer.
-    document.getElementsByClassName('close')[0].style.display = "none"; // Button om te sluiten.
+    document.getElementsByClassName("trailer")[0].remove();
+    document.getElementsByClassName('close')[0].style.display = "none";
 }
 
 document.getElementsByClassName('close')[0].addEventListener('click', removeIFrame) // Klik om het te sluiten.
